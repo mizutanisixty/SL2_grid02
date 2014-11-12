@@ -81,6 +81,7 @@
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="advancedInteger.h" />
     <ClInclude Include="algorithm.h" />
     <ClInclude Include="api.h" />
     <ClInclude Include="calculate.h" />
@@ -89,10 +90,21 @@
     <ClInclude Include="includer_std.h" />
     <ClInclude Include="interface.h" />
     <ClInclude Include="math.h" />
+    <ClInclude Include="treeDataTag.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\Resource\setting.ini" />
     <None Include="MakeHeader.bat" />
     <None Include="MakeHeader2.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resource\test.provMapData.bmp" />
+    <Image Include="..\Resource\__test.provMapData.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Resource\test.provTsunamiData01.txt" />
+    <Text Include="..\Resource\test.provWayData01.txt" />
+    <Text Include="..\Resource\メモ.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -55,6 +55,12 @@
     <Filter Include="ヘッダー ファイル\Processer">
       <UniqueIdentifier>{80cd41de-d77a-449f-bdc1-1321014b0f16}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{69dee861-b9d2-4691-810f-617ea96f838d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\API\Data\Physics\Tree">
+      <UniqueIdentifier>{2a80ba83-8f1a-4ea8-8f43-9f1e220248ef}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -86,6 +92,12 @@
     <ClInclude Include="api.h">
       <Filter>ヘッダー ファイル\Includer</Filter>
     </ClInclude>
+    <ClInclude Include="advancedInteger.h">
+      <Filter>ヘッダー ファイル\API\Data\Physics\advancedData</Filter>
+    </ClInclude>
+    <ClInclude Include="treeDataTag.h">
+      <Filter>ヘッダー ファイル\API\Data\Physics\Tree</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="MakeHeader.bat">
@@ -94,5 +106,27 @@
     <None Include="MakeHeader2.bat">
       <Filter>リソース ファイル</Filter>
     </None>
+    <None Include="..\Resource\setting.ini">
+      <Filter>Resource</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resource\test.provMapData.bmp">
+      <Filter>Resource</Filter>
+    </Image>
+    <Image Include="..\Resource\__test.provMapData.bmp">
+      <Filter>Resource</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Resource\test.provTsunamiData01.txt">
+      <Filter>Resource</Filter>
+    </Text>
+    <Text Include="..\Resource\test.provWayData01.txt">
+      <Filter>Resource</Filter>
+    </Text>
+    <Text Include="..\Resource\メモ.txt">
+      <Filter>Resource</Filter>
+    </Text>
   </ItemGroup>
 </Project>
