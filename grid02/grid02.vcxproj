@@ -92,6 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="MakeHeader.bat" />
+    <None Include="MakeHeader2.bat" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -91,5 +91,8 @@
     <None Include="MakeHeader.bat">
       <Filter>リソース ファイル</Filter>
     </None>
+    <None Include="MakeHeader2.bat">
+      <Filter>リソース ファイル</Filter>
+    </None>
   </ItemGroup>
 </Project>
