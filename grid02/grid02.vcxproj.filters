@@ -13,5 +13,83 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="ヘッダー ファイル\Includer">
+      <UniqueIdentifier>{3c559b0d-aed5-4599-b489-35735f8e9ab7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\API">
+      <UniqueIdentifier>{5da101ad-e3c6-4ece-a91a-ab8f7b7eb2f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\API\User Interface">
+      <UniqueIdentifier>{29fee608-9726-480d-8eec-3cd92c66e53d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\API\Data">
+      <UniqueIdentifier>{539e1943-5753-4e1a-9140-0aa66e9b375d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\API\Data\processData">
+      <UniqueIdentifier>{b2e85e02-8caa-45ef-a477-6fb6cabe33a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\API\Data\Physics">
+      <UniqueIdentifier>{2476f74e-47b0-4e00-adf5-493e3242a9bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\API\Data\Physics\advancedData">
+      <UniqueIdentifier>{a5d3f91c-b690-4cfb-83f6-dbed2992f58f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\API\Algorithm">
+      <UniqueIdentifier>{29debd67-ca24-436b-80cc-04c536a63b27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\API\Algorithm\Calculate">
+      <UniqueIdentifier>{ed59deb8-de86-4415-9e8e-d1384a01fd76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\API\Algorithm\Compare">
+      <UniqueIdentifier>{2cbdea84-6268-4235-9783-109eeced216b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\API\Error">
+      <UniqueIdentifier>{53a1dfe8-d363-4525-a12e-539d065a0fa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\API\Process">
+      <UniqueIdentifier>{9a77ea68-132d-4983-85d6-fc7c3574ab33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\API\Process\Block">
+      <UniqueIdentifier>{64418b1d-8083-4699-98ff-9f7f8e524d37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Processer">
+      <UniqueIdentifier>{80cd41de-d77a-449f-bdc1-1321014b0f16}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cui.h">
+      <Filter>ヘッダー ファイル\API\User Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="define.h">
+      <Filter>ヘッダー ファイル\Includer</Filter>
+    </ClInclude>
+    <ClInclude Include="includer_std.h">
+      <Filter>ヘッダー ファイル\Includer</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithm.h">
+      <Filter>ヘッダー ファイル\API\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="calculate.h">
+      <Filter>ヘッダー ファイル\API\Algorithm\Calculate</Filter>
+    </ClInclude>
+    <ClInclude Include="math.h">
+      <Filter>ヘッダー ファイル\API\Algorithm\Calculate</Filter>
+    </ClInclude>
+    <ClInclude Include="interface.h">
+      <Filter>ヘッダー ファイル\API\User Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="api.h">
+      <Filter>ヘッダー ファイル\Includer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MakeHeader.bat">
+      <Filter>リソース ファイル</Filter>
+    </None>
   </ItemGroup>
 </Project>
