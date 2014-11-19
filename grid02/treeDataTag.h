@@ -68,9 +68,12 @@ namespace tag{
 		return_t pop_back(T &dat){
 			if(data.empty())
 				return RETURN_FAILED;
-			T dat = data[data.size() - 1];
+			dat = data[data.size() - 1];
 			data.pop_back();
 			return RETURN_SUCCESS;
+		};
+		bool empty(){
+			return data.empty();
 		};
 	};
 
@@ -80,6 +83,10 @@ namespace tag{
 	public:
 		_tag_number_helper(){
 			type = tagClassId;
+		};
+		_tag_number_helper(T i){
+			type = tagClassId;
+			data = i;
 		};
 		~_tag_number_helper(){};
 		_tag_number_helper& operator= (T param){
@@ -92,6 +99,37 @@ namespace tag{
 		};
 		operator T(){
 			return data;
+		};
+	};
+
+	class tag_string : public tag_basic{
+	private:
+		std::string data;
+	public:
+		tag_string(){
+			type = t_string;
+		};
+		~tag_string(){};
+		operator string(){
+			return data;
+		};
+		string& _helper_getData(){
+			return data;
+		};
+		tag_string& operator= (string param){
+			data = param;
+			return *this;
+		};
+		tag_string& operator= (char* param){
+			data = param;
+			return *this;
+		};
+		tag_string& operator= (tag_string param){
+			data = param._helper_getData();
+			return *this;
+		};
+		operator const char*(){
+			return data.c_str();
 		};
 	};
 
@@ -130,5 +168,19 @@ namespace tag{
 		};
 
 	};
+/*
+	[v] tag_end
+	[v] tag_byte
+	[v] tag_short
+	[v] tag_int
+	[v] tag_long
+	[v] tag_float
+	[v] tag_double
+	[v] tag_byte_array
+	[v] tag_string
+	[ ] tag_list
+	[ ] tag_compound
+	[v] tag_int_array
+*/
 }
 #endif 
