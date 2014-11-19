@@ -83,9 +83,13 @@
   <ItemGroup>
     <ClInclude Include="advancedInteger.h" />
     <ClInclude Include="algorithm.h" />
+    <ClInclude Include="algorithm_max.h" />
+    <ClInclude Include="algorithm_min.h" />
     <ClInclude Include="api.h" />
     <ClInclude Include="calculate.h" />
+    <ClInclude Include="callProc.h" />
     <ClInclude Include="cui.h" />
+    <ClInclude Include="data.h" />
     <ClInclude Include="define.h" />
     <ClInclude Include="includer_std.h" />
     <ClInclude Include="interface.h" />

@@ -38,6 +38,9 @@ namespace tag{
 		~tag_basic(){
 
 		};
+		operator tag_t(){
+			return type;
+		};
 	};
 
 	template <class T, tag_t tagClassId> class _tag_array_helper : public tag_basic{
@@ -71,29 +74,61 @@ namespace tag{
 		};
 	};
 
-	class tag_int : tag_basic{
+	template <class T, tag_t tagClassId> class _tag_number_helper : public tag_basic{
+	private:
+		T data;
 	public:
-		tag_int(){};
-		~tag_int(){};
+		_tag_number_helper(){
+			type = tagClassId;
+		};
+		~_tag_number_helper(){};
+		_tag_number_helper& operator= (T param){
+			data = param;
+			return *this;
+		};
+		_tag_number_helper& operator= (_tag_number_helper param){
+			data = (T)param;
+			return *this;
+		};
+		operator T(){
+			return data;
+		};
+	};
+
+	class tag_end : public tag_basic{
+	private:
+	public:
+		tag_end(){
+			type = t_end;
+		};
+		~tag_end(){};
 	};
 
 	//Array系クラスの定義
+	typedef _tag_number_helper<byte, t_byte> tag_byte;
+	typedef _tag_number_helper<short, t_short> tag_short;
+	typedef _tag_number_helper<int, t_int> tag_int;
+	typedef _tag_number_helper<long, t_long> tag_long;
+	typedef _tag_number_helper<float, t_float> tag_float;
+	typedef _tag_number_helper<double, t_double> tag_double;
+	//中身は
+	//typedef _tag_array_helper<_tag_integer_helper<unsigned char, t_byte>, t_byte_array> tag_byte_array;
+	//的な？
 	typedef _tag_array_helper<tag_byte, t_byte_array> tag_byte_array;
 	typedef _tag_array_helper<tag_int, t_int_array> tag_int_array;
 
-	typedef union _tag_u{
-		tag_end tEnd;
-		tag_byte tByte;
-		tag_short tShort;
-		tag_int tInt;
-		tag_long tLong;
-		tag_float tFloat;
-		tag_double tDouble;
-		tag_byte_array tByteArr;
-		tag_string tString;
-		tag_list tList;
-		tag_compound tCompound;
-		tag_int_array tIntArr;
-	} tag_u;
+	class dat{
+	private:
+		bool empty;
+		tag_t type;
+	public:
+		dat(){};
+		~dat(){};
+		dat& operator= (tag_end p){
+			type = t_end;
+			return *this;
+		};
+
+	};
 }
 #endif 

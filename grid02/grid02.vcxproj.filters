@@ -98,6 +98,18 @@
     <ClInclude Include="treeDataTag.h">
       <Filter>ヘッダー ファイル\API\Data\Physics\Tree</Filter>
     </ClInclude>
+    <ClInclude Include="data.h">
+      <Filter>ヘッダー ファイル\API\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithm_max.h">
+      <Filter>ヘッダー ファイル\API\Algorithm\Compare</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithm_min.h">
+      <Filter>ヘッダー ファイル\API\Algorithm\Compare</Filter>
+    </ClInclude>
+    <ClInclude Include="callProc.h">
+      <Filter>ヘッダー ファイル\API\Process</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="MakeHeader.bat">

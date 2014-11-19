@@ -3,5 +3,7 @@
 
 #include "interface.h"
 #include "algorithm.h"
+#include "data.h"
+#include "callProc.h"
 
 #endif 
