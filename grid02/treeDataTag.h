@@ -65,12 +65,13 @@ namespace tag{
 		bool a(size_t id){
 			return data.size() > id;
 		};
-		return_t pop_back(T &dat){
+		T pop_back(){
+			T tmp;
 			if(data.empty())
-				return RETURN_FAILED;
-			dat = data[data.size() - 1];
+				return NULL;
+			tmp = data[data.size() - 1];
 			data.pop_back();
-			return RETURN_SUCCESS;
+			return tmp;
 		};
 		bool empty(){
 			return data.empty();
@@ -142,6 +143,27 @@ namespace tag{
 		~tag_end(){};
 	};
 
+	struct wildTag{
+		void *data;
+		tag_t type;
+	};
+
+
+	class tag_compound : public tag_basic{
+	private:
+		vector<void*> data;
+		size_t size;
+		vector<tag_t> data_type;
+	public:
+		tag_compound(){
+			type = t_compound;
+			isArray = true;
+			size = 0;
+		};
+		~tag_compound(){};
+		
+	};
+
 	//ArrayŒnƒNƒ‰ƒX‚Ì’è‹`
 	typedef _tag_number_helper<byte, t_byte> tag_byte;
 	typedef _tag_number_helper<short, t_short> tag_short;
@@ -166,7 +188,6 @@ namespace tag{
 			type = t_end;
 			return *this;
 		};
-
 	};
 /*
 	[v] tag_end

@@ -42,8 +42,8 @@ int main(){
 	cui << s;
 	for(int i=0; i<30; i++)
 		ia.push_back(i);
-	while(ia.empty())
-		cui << (ia.pop_back(i), i) << endl;
+	while(!ia.empty()|true)
+		cui << ia.pop_back() << endl;
 
 	return RETURN_SUCCESS;
 }

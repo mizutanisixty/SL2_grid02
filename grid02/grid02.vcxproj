@@ -110,6 +110,7 @@
     <Text Include="..\Resource\test.provTsunamiData01.txt" />
     <Text Include="..\Resource\test.provWayData01.txt" />
     <Text Include="..\Resource\メモ.txt" />
+    <Text Include="Memo.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

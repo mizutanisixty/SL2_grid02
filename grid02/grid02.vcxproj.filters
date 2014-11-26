@@ -143,5 +143,8 @@
     <Text Include="..\Resource\メモ.txt">
       <Filter>Resource</Filter>
     </Text>
+    <Text Include="Memo.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
   </ItemGroup>
 </Project>
