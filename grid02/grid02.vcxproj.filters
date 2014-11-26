@@ -110,6 +110,9 @@
     <ClInclude Include="callProc.h">
       <Filter>ヘッダー ファイル\API\Process</Filter>
     </ClInclude>
+    <ClInclude Include="processFormat.h">
+      <Filter>ヘッダー ファイル\API\Data\processData</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="MakeHeader.bat">
